@@ -295,11 +295,12 @@ a { color: var(--sky); }
   .welcome-message::before { display: none; }
 }
 
-/* ===== Social media links in the bottom bar ===== */
-.footer .container { align-items: center; }
-.social { display: flex; flex-wrap: wrap; gap: .5rem; }
+/* ===== Social media links in the Contact section ===== */
+.social { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: 1.5rem; }
 .social a {
-  padding: .3rem .85rem; border: 1px solid rgba(255,255,255,.25); border-radius: 999px;
-  text-decoration: none; font-size: .85rem; color: #dce4ee;
+  padding: .45rem 1.1rem; border: 1.5px solid var(--sky); border-radius: 999px;
+  text-decoration: none; font-size: .9rem; font-weight: 500; color: var(--sky);
+}
+.social a:hover { background: var(--sky); color: #fff; }
 }
 .social a:hover { background: rgba(255,255,255,.1); color: #fff; }
