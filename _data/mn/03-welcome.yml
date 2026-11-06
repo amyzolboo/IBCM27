@@ -21,7 +21,7 @@ heading: Зохион байгуулагчдын мэндчилгээ
 list:
 - name: Гантулга Даваахүү, Ph.D                                       # EDIT
   position: ШУА-ийн Биологийн хүрээлэнгийн захирал        # EDIT
-  photo: "assets/images/GD.png"
+  photo: GD.png
   message: |
     Эрхэм хүндэт эрдэмтэн, судлаачид аа,
 
