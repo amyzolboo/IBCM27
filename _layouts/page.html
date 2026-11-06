@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{%- comment -%}
+  ==================================================================
+  TEMPLATE: TEXT PAGE (e.g. Guidelines)
+  ==================================================================
+  You do NOT need to edit this file.
+  Pages that use it start with  layout: page  — write their content in Markdown in the .md file.
+{%- endcomment -%}
+<section class="page-header">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p>{{ page.subtitle }}</p>{% endif %}
+  </div>
+</section>
+<section class="section">
+  <div class="container prose">
+    {{ content }}
+  </div>
+</section>

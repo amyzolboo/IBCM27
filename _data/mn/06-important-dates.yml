@@ -1,0 +1,29 @@
+# ====================================================================
+#  IMPORTANT DATES  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The timeline of deadlines.
+#
+#  How to edit:
+#   • Replace the placeholder date with the real date, e.g.  date: 15 March 2027
+#   • highlight: true  makes that line bold (used for the conference days).
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/06-important-dates.yml
+# ====================================================================
+
+small_title: Хуваарь
+heading: Чухал огноонууд
+list:
+- date: Удахгүй
+  event: Хураангуй хүлээн авч эхлэх
+- date: Удахгүй
+  event: Хураангуй илгээх эцсийн хугацаа
+- date: Удахгүй
+  event: Хүлээн авсан тухай мэдэгдэл
+- date: Удахгүй
+  event: Хөнгөлөлттэй бүртгэл хаагдах
+- date: Удахгүй
+  event: Бүтэн өгүүлэл илгээх (эмхэтгэл)
+- date: Удахгүй
+  event: Хурал болох өдрүүд, Улаанбаатар
+  highlight: true

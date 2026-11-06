@@ -1,0 +1,28 @@
+# ====================================================================
+#  COMMITTEES  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The committee lists.
+#
+#  How to edit:
+#   • Add one member per line, starting with  - 
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/09-committees.yml
+# ====================================================================
+
+small_title: Бүрэлдэхүүн
+heading: Хороод
+list:
+- name: Зохион байгуулах хороо
+  members:
+  - Нэр — Дарга
+  - Нэр
+  - Нэр
+- name: Олон улсын шинжлэх ухааны хороо
+  members:
+  - Нэр, Байгууллага, Улс
+  - Нэр, Байгууллага, Улс
+- name: Техникийн хороо
+  members:
+  - Нэр
+  - Нэр

@@ -1,0 +1,34 @@
+{%- comment -%}
+  ==================================================================
+  HOME PAGE SECTION: TOP BANNER
+  ==================================================================
+  You do NOT need to edit this file. It only sets the layout.
+  To change the TEXT, edit:  _data/en/01-top-banner.yml  and  _data/mn/01-top-banner.yml
+  To hide or move this section, see _layouts/home.html
+{%- endcomment -%}
+{%- assign text = site.data[lang]["01-top-banner"] -%}
+{%- assign hero_img = site.conference.hero_image | prepend: "/assets/images/" | relative_url -%}
+{%- assign logo_img = text.logo | prepend: "/assets/images/" | relative_url -%}
+<section class="hero" style="--hero-image: url('{{ hero_img }}');">
+  <div class="container hero-content">
+    <img src="{{ logo_img }}" alt="{{ text.logo_alt }}" class="hero-logo" />
+    {% if text.badge and text.badge != "" %}<a href="#gb34" class="hero-badge">{{ text.badge }}</a>{% endif %}
+    <h1>{{ text.title }} <em>{{ text.year }}</em></h1>
+    <p class="hero-meta">
+      <span>📍 {{ text.place }}</span>
+      <span>🗓 {{ text.dates }}</span>
+    </p>
+    {% if site.conference.start and site.conference.start != "" %}
+    <div class="countdown" id="countdown" data-start="{{ site.conference.start }}" hidden>
+      <div><strong data-cd="days">0</strong><span>{{ text.countdown_days }}</span></div>
+      <div><strong data-cd="hours">0</strong><span>{{ text.countdown_hours }}</span></div>
+      <div><strong data-cd="mins">0</strong><span>{{ text.countdown_minutes }}</span></div>
+    </div>
+    {% endif %}
+    <div class="hero-actions">
+      <a href="#register" class="btn">{{ text.button_register }}</a>
+      <a href="#about" class="btn btn-ghost">{{ text.button_more }}</a>
+    </div>
+  </div>
+  <p class="hero-credit">{{ text.photo_credit }}</p>
+</section>

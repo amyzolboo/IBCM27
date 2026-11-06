@@ -1,0 +1,31 @@
+# ====================================================================
+#  ABOUT  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The "About the conference" section: heading, the two paragraphs and the three numbers.
+#
+#  How to edit:
+#   • text: is the paragraph text. Leave an empty line between paragraphs.
+#   • Keep the 2 spaces at the start of each line of text.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/02-about.yml
+# ====================================================================
+
+small_title: Хурлын тухай
+heading: Дэлхийн биологичдыг Монголд урьж байна
+text: |
+  Олон улсын биологийн эрдэм шинжилгээний хурал (IBCM) нь Монгол болон дэлхийн олон орны
+  эрдэмтэн, судлаач, оюутан, мэргэжилтнүүдийг нэгтгэн, судалгааны шинэ үр дүнгээ хуваалцах,
+  салбар хоорондын хамтын ажиллагааг бэхжүүлэх, биологийн шинжлэх ухааны тулгамдсан болон
+  шинээр гарч буй асуудлын шийдлийг эрэлхийлэх зорилготой.
+
+  2025 оны 9-р сарын 18–19-нд Биологийн хүрээлэнгийн 60 жилийн ойд зориулан Улаанбаатар хотноо
+  амжилттай болсон IBCM25 хурлын үргэлжлэл болох IBCM27 нь пленар илтгэл, үндсэн илтгэл,
+  урилгат илтгэл, аман болон постер илтгэлүүдээс бүрдэнэ.
+stats:
+- number: 60+
+  label: жилийн түүхтэй Биологийн хүрээлэн
+- number: 2-р
+  label: удаагийн IBCM хурал
+- number: '5'
+  label: салбар хуралдаан

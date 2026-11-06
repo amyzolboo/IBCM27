@@ -1,0 +1,26 @@
+# ====================================================================
+#  TOP BANNER  ·  ENGLISH text
+# ====================================================================
+#  What is this?  The big dark banner at the top of the home page: logo, title, place, dates and the two buttons.
+#
+#  How to edit:
+#   • When the dates are fixed, change  dates:
+#   • The background photo and the countdown are set in _config.yml
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/01-top-banner.yml
+# ====================================================================
+
+logo: logo-ib-en-white.png
+logo_alt: Mongolian Academy of Sciences — Institute of Biology
+badge: Held together with GB34 · 34th GBIF Governing Board meeting     # small label above the title. Leave "" to hide it
+title: International Biological Conference in Mongolia
+year: '2027'
+place: Ulaanbaatar, Mongolia
+dates: Dates to be announced
+button_register: Register & submit abstract
+button_more: Learn more
+photo_credit: 'Photo: IBCM25 participants, Ulaanbaatar'
+countdown_days: days
+countdown_hours: hours
+countdown_minutes: minutes

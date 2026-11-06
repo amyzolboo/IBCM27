@@ -1,0 +1,82 @@
+# =====================================================================
+#  MAIN SETTINGS  (the same for both languages)
+# =====================================================================
+#  What is this?  Dates/countdown, email, phone, registration form link,
+#                 map and background photo.
+#  The page TEXT is not here — it is in  _data/en/  and  _data/mn/
+#
+#  The part marked "EDIT" below is for you.
+#  The parts marked "TECHNICAL" should be left as they are.
+#  After saving, wait 1–2 minutes for GitHub to rebuild the site.
+# =====================================================================
+
+title: IBCM27
+description: International Biological Conference in Mongolia 2027 — Institute of Biology, Mongolian Academy of Sciences
+
+# ---------------------------------------------------------------------
+#  TECHNICAL — website address
+# ---------------------------------------------------------------------
+# baseurl must match the repository name exactly (capital letters too).
+# If you later connect a custom domain (e.g. ibcm.ac.mn), change baseurl to ""
+url: "https://amyzolboo.github.io"
+baseurl: "/IBCM27"
+
+timezone: Asia/Ulaanbaatar
+
+# ---------------------------------------------------------------------
+#  EDIT — CONFERENCE DETAILS
+# ---------------------------------------------------------------------
+conference:
+  # Start date & time in Ulaanbaatar time, e.g. "2027-09-16T09:00".
+  # When filled in, a countdown appears on the home page. Leave "" to hide it.
+  start: ""
+
+  email: info@example.com
+  phone: "+976 0000 0000"
+
+  # Paste the registration form link (e.g. Google Form). Leave "" while it's not ready.
+  registration_form: ""
+
+  # Map on the home page. Google Maps → Share → Embed a map → copy only the src="..." link
+  map_embed: "https://www.openstreetmap.org/export/embed.html?bbox=106.80%2C47.86%2C107.02%2C47.96&layer=mapnik"
+
+  # Home page background photo (file in assets/images/)
+  hero_image: hero-ibcm2025.jpg
+
+# ---------------------------------------------------------------------
+#  TECHNICAL — languages and news (leave as they are)
+#  English pages are in the main folder, Mongolian pages are in mn/
+# ---------------------------------------------------------------------
+languages: [en, mn]
+default_lang: en
+
+# News posts: English in _posts/, Mongolian in mn/_posts/
+permalink: /:categories/news/:year/:month/:title/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+  - scope:
+      path: "mn"
+    values:
+      lang: mn
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+markdown: kramdown
+exclude:            # help files that are only for GitHub, not the website
+  - README.md
+  - _data/README.md
+  - _layouts/README.md
+  - _includes/README.md
+  - _posts/README.md
+  - mn/README.md
+  - assets/README.md
+  - assets/images/speakers/README.md
+  - Gemfile
+  - Gemfile.lock

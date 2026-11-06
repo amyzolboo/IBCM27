@@ -1,0 +1,29 @@
+# ====================================================================
+#  IMPORTANT DATES  ·  ENGLISH text
+# ====================================================================
+#  What is this?  The timeline of deadlines.
+#
+#  How to edit:
+#   • Replace the placeholder date with the real date, e.g.  date: 15 March 2027
+#   • highlight: true  makes that line bold (used for the conference days).
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/06-important-dates.yml
+# ====================================================================
+
+small_title: Timeline
+heading: Important dates
+list:
+- date: TBA
+  event: Call for abstracts opens
+- date: TBA
+  event: Abstract submission deadline
+- date: TBA
+  event: Notification of acceptance
+- date: TBA
+  event: Early-bird registration closes
+- date: TBA
+  event: Full paper submission (proceedings)
+- date: TBA
+  event: Conference days, Ulaanbaatar
+  highlight: true

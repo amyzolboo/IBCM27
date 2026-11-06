@@ -1,0 +1,12 @@
+# ====================================================================
+#  FOOTER  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The text in the dark bar at the very bottom of every page.
+#
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/13-footer.yml
+# ====================================================================
+
+copyright: © 2027 IBCM Зохион байгуулах хороо · ШУА-ийн Биологийн хүрээлэн
+back_to_top: Дээш буцах ↑

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%- comment -%}
+  ==================================================================
+  TEMPLATE: FRAME OF EVERY PAGE (top menu + page + bottom bar)
+  ==================================================================
+  You do NOT need to edit this file.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.default_lang -%}
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} · {% endif %}IBCM27 — {{ site.data[lang]["01-top-banner"].title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
+</head>
+<body>
+  {% include navbar.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+</body>
+</html>

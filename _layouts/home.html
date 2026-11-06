@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- comment -%}
+  ==================================================================
+  TEMPLATE: HOME PAGE
+  ==================================================================
+  The home page is built from the sections listed below, top to bottom.
+    • To HIDE a section: delete its line.
+    • To MOVE a section: move its line up or down.
+  Each section's text is in _data/en/ and _data/mn/ (files 01 … 13).
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.default_lang -%}
+
+{% include blocks/01-top-banner.html %}
+{% include blocks/02-about.html %}
+{% include blocks/03-welcome.html %}
+{% include blocks/04-gb34.html %}
+{% include blocks/05-sessions.html %}
+{% include blocks/06-important-dates.html %}
+{% include blocks/07-news.html %}
+{% include blocks/08-speakers.html %}
+{% include blocks/09-committees.html %}
+{% include blocks/10-registration-and-fees.html %}
+{% include blocks/11-venue.html %}
+{% include blocks/12-contact.html %}
+
+{{ content }}

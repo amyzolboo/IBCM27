@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{%- comment -%}
+  ==================================================================
+  TEMPLATE: LIST OF ALL NEWS
+  ==================================================================
+  You do NOT need to edit this file. It shows all posts in the current language.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign lang_posts = site.posts | where: "lang", lang -%}
+<section class="page-header">
+  <div class="container">
+    <h1>{{ site.data[lang]["07-news"].page_title }}</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    {% if lang_posts.size > 0 %}
+    <div class="news-list">
+      {% for post in lang_posts %}
+      <article class="news-item">
+        <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a class="more" href="{{ post.url | relative_url }}">{{ site.data[lang]["07-news"].read_more }}</a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="lead">{{ site.data[lang]["07-news"].empty }}</p>
+    {% endif %}
+    {{ content }}
+  </div>
+</section>

@@ -1,0 +1,26 @@
+# ====================================================================
+#  REGISTRATION & FEES  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The dark Registration section and the fees table.
+#
+#  How to edit:
+#   • The registration form link itself is set in _config.yml (registration_form:)
+#   • fees: the first row is the column titles; each next row is one category.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/10-registration-and-fees.yml
+# ====================================================================
+
+small_title: Оролцох
+heading: Бүртгэл ба хураангуй илгээх
+text: |
+  Бүртгэл болон хураангуй хүлээн авах ажил удахгүй эхэлнэ. Хураангуйг англи хэлээр бичнэ.
+  Хүлээн авсан өгүүллүүдийг хурлын эмхэтгэлд нийтлэх боломжтой.
+button: Бүртгэлийн маягт
+button_soon: Бүртгэлийн маягт (удахгүй)
+fees_heading: Бүртгэлийн хураамж
+fees:
+- [Ангилал, Хөнгөлөлттэй, Энгийн]
+- [Гадаадын оролцогч, TBA, TBA]
+- [Монгол оролцогч, TBA, TBA]
+- [Оюутан, TBA, TBA]

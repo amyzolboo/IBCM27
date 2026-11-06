@@ -1,0 +1,33 @@
+# ====================================================================
+#  IBCM27 & GB34  ·  ENGLISH text
+# ====================================================================
+#  What is this?  The section explaining that IBCM27 is held together
+#                 with GB34 (the 34th GBIF Governing Board meeting).
+#
+#  How to edit:
+#   • Check the text with the GBIF Mongolia node / GBIF Secretariat before publishing.
+#   • cards: the three boxes on the right. Copy a block (- title: / text:) to add one.
+#   • link: paste the official GB34 page on GBIF.org when it exists — a button appears.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/04-gb34.yml
+# ====================================================================
+
+small_title: Held together with
+heading: IBCM27 & GB34
+text: |
+  IBCM27 will take place together with **GB34**, the 34th meeting of the Governing Board of the
+  [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org), an international network
+  that provides open access to data about all types of life on Earth.
+
+  Hosting both events in the same week brings together biologists and biodiversity data experts
+  from around the world in Ulaanbaatar.
+link: ""
+button: Official GB34 page on GBIF.org
+cards:
+- title: GB34 — GBIF Governing Board
+  text: For GBIF delegations, committee members and the GBIF Secretariat. Registration is through GBIF.
+- title: IBCM27 — Conference
+  text: Open to all researchers, students and practitioners. Registration on this website.
+- title: Joint events
+  text: Shared activities such as a symposium or training workshops — to be announced.   # EDIT

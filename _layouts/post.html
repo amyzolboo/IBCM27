@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{%- comment -%}
+  ==================================================================
+  TEMPLATE: ONE NEWS POST
+  ==================================================================
+  You do NOT need to edit this file.
+  News posts are in _posts/ (English) and mn/_posts/ (Mongolian).
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- if lang == "mn" -%}{%- assign news_url = "/mn/news/" -%}{%- else -%}{%- assign news_url = "/news/" -%}{%- endif -%}
+<section class="page-header">
+  <div class="container">
+    <p class="eyebrow">{{ page.date | date: "%Y-%m-%d" }}</p>
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container prose">
+    {{ content }}
+    <p class="back-link"><a href="{{ news_url | relative_url }}">← {{ site.data[lang]["07-news"].page_title }}</a></p>
+  </div>
+</section>

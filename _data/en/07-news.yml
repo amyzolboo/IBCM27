@@ -1,0 +1,18 @@
+# ====================================================================
+#  NEWS — LABELS  ·  ENGLISH text
+# ====================================================================
+#  What is this?  Only the headings and button labels of the News section.
+#
+#  How to edit:
+#   • The news posts themselves are separate files in the _posts folder (English) and mn/_posts (Mongolian).
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/07-news.yml
+# ====================================================================
+
+small_title: Latest
+heading: News & announcements
+all_news: All news →
+read_more: Read more →
+empty: No announcements yet.
+page_title: News & announcements

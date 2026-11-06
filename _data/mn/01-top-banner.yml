@@ -1,0 +1,26 @@
+# ====================================================================
+#  TOP BANNER  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The big dark banner at the top of the home page: logo, title, place, dates and the two buttons.
+#
+#  How to edit:
+#   • When the dates are fixed, change  dates:
+#   • The background photo and the countdown are set in _config.yml
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/01-top-banner.yml
+# ====================================================================
+
+logo: logo-ib-mn-white.png
+logo_alt: Монгол Улсын Шинжлэх Ухааны Академи — Биологийн хүрээлэн
+badge: GB34 буюу GBIF-ийн Удирдах зөвлөлийн 34 дэх хуралтай хамт     # small label above the title. Leave "" to hide it
+title: Олон улсын биологийн эрдэм шинжилгээний хурал
+year: '2027'
+place: Улаанбаатар, Монгол Улс
+dates: Огноо удахгүй зарлагдана
+button_register: Бүртгүүлэх, хураангуй илгээх
+button_more: Дэлгэрэнгүй
+photo_credit: 'Зураг: IBCM25-ын оролцогчид, Улаанбаатар'
+countdown_days: өдөр
+countdown_hours: цаг
+countdown_minutes: минут

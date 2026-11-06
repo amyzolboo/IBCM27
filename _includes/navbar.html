@@ -1,0 +1,46 @@
+{%- comment -%}
+  ==================================================================
+  TOP MENU BAR (logo, menu links, EN | МН switch)
+  ==================================================================
+  You do NOT need to edit this file.
+  To change the menu links, edit  _data/en/menu.yml  and  _data/mn/menu.yml
+  The EN | МН switch jumps to the same page in the other language:
+  pages that are translations of each other have the same  ref:  at the top.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign nav = site.data[lang].menu -%}
+{%- if lang == "mn" -%}{%- assign home_url = "/mn/" -%}{%- else -%}{%- assign home_url = "/" -%}{%- endif -%}
+{%- assign en_url = "/" -%}
+{%- assign mn_url = "/mn/" -%}
+{%- if page.ref -%}
+  {%- for p in site.pages -%}
+    {%- if p.ref == page.ref -%}
+      {%- if p.lang == "mn" -%}{%- assign mn_url = p.url -%}{%- else -%}{%- assign en_url = p.url -%}{%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- for p in site.posts -%}
+    {%- if p.ref == page.ref -%}
+      {%- if p.lang == "mn" -%}{%- assign mn_url = p.url -%}{%- else -%}{%- assign en_url = p.url -%}{%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+<header class="nav" id="top">
+  <div class="container nav-inner">
+    <a href="{{ home_url | relative_url }}" class="brand">
+      <img src="{{ '/assets/images/ibcm-mark-white.png' | relative_url }}" alt="IBCM logo" class="brand-mark" />
+      <span class="brand-text">IBCM<span>27</span></span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        {%- for item in nav %}
+        <a href="{{ item.url | relative_url }}"{% if item.button %} class="btn btn-small"{% endif %}>{{ item.title }}</a>
+        {%- endfor %}
+      </nav>
+      <div class="lang-switch" aria-label="Language">
+        <a href="{{ en_url | relative_url }}" lang="en"{% if lang == "en" %} class="active" aria-current="true"{% endif %}>EN</a>
+        <a href="{{ mn_url | relative_url }}" lang="mn"{% if lang == "mn" %} class="active" aria-current="true"{% endif %}>МН</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>

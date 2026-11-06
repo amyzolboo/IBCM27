@@ -1,0 +1,34 @@
+# ====================================================================
+#  WELCOME MESSAGE  ·  ENGLISH text
+# ====================================================================
+#  What is this?  The greeting from the Director / Conference Chair,
+#                 with photo, name and position.
+#
+#  How to edit:
+#   • The message below is only a DRAFT — replace it with the real text
+#     approved by the person who signs it. Leave an empty line between paragraphs.
+#   • Photo: upload it to assets/images/ and write only the file name,
+#     e.g.  photo: director.jpg   (leave "" to show a placeholder)
+#   • More than one greeting (e.g. Director AND Chair)? Copy the whole block
+#     starting with  - name:  and paste it below. They will appear one after another.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/03-welcome.yml
+# ====================================================================
+
+small_title: Welcome message
+heading: Greetings from the organizers
+list:
+- name: Name Surname                                   # EDIT
+  position: Director, Institute of Biology, Mongolian Academy of Sciences   # EDIT
+  photo: ""
+  message: |
+    Dear colleagues and friends,
+
+    On behalf of the Institute of Biology of the Mongolian Academy of Sciences, it is my great
+    pleasure to invite you to the International Biological Conference in Mongolia 2027 in Ulaanbaatar.
+
+    We look forward to welcoming researchers from Mongolia and around the world, to sharing new
+    discoveries, and to building lasting collaborations in the biological sciences.
+
+    I look forward to meeting you in Ulaanbaatar.

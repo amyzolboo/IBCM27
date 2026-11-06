@@ -1,0 +1,19 @@
+# ====================================================================
+#  VENUE  ·  ENGLISH text
+# ====================================================================
+#  What is this?  Venue name, address and travel text. (The map link is in _config.yml)
+#
+#  How to edit:
+#   • When the venue is fixed, change  name:  and  address:
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/11-venue.yml
+# ====================================================================
+
+small_title: Getting there
+heading: Venue
+name: Venue to be announced
+address: Ulaanbaatar, Mongolia
+text: |
+  International participants arrive at Chinggis Khaan International Airport (UBN), about an
+  hour's drive from the city centre. Visa and accommodation information will be posted here.

@@ -1,0 +1,36 @@
+{%- comment -%}
+  ==================================================================
+  HOME PAGE SECTION: LATEST NEWS (3 newest posts)
+  ==================================================================
+  You do NOT need to edit this file. It only sets the layout.
+  To change the TEXT, edit:  _data/en/07-news.yml  and  _data/mn/07-news.yml
+  To hide or move this section, see _layouts/home.html
+{%- endcomment -%}
+{%- assign text = site.data[lang]["07-news"] -%}
+{%- assign lang_posts = site.posts | where: "lang", lang -%}
+{%- if lang == "mn" -%}{%- assign news_url = "/mn/news/" -%}{%- else -%}{%- assign news_url = "/news/" -%}{%- endif -%}
+<section id="news" class="section section-tint">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow dark">{{ text.small_title }}</p>
+        <h2>{{ text.heading }}</h2>
+      </div>
+      <a href="{{ news_url | relative_url }}" class="section-link">{{ text.all_news }}</a>
+    </div>
+    {% if lang_posts.size > 0 %}
+    <div class="news-list">
+      {% for post in lang_posts limit: 3 %}
+      <article class="news-item">
+        <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
+        <a class="more" href="{{ post.url | relative_url }}">{{ text.read_more }}</a>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="lead">{{ text.empty }}</p>
+    {% endif %}
+  </div>
+</section>

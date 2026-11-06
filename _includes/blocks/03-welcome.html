@@ -1,0 +1,31 @@
+{%- comment -%}
+  ==================================================================
+  HOME PAGE SECTION: WELCOME MESSAGE
+  ==================================================================
+  You do NOT need to edit this file. It only sets the layout.
+  To change the TEXT, edit:  _data/en/03-welcome.yml  and  _data/mn/03-welcome.yml
+  To hide or move this section, see _layouts/home.html
+{%- endcomment -%}
+{%- assign text = site.data[lang]["03-welcome"] -%}
+<section id="welcome" class="section section-tint">
+  <div class="container">
+    <p class="eyebrow dark">{{ text.small_title }}</p>
+    <h2>{{ text.heading }}</h2>
+    {%- for person in text.list %}
+    <article class="welcome">
+      <div class="welcome-person">
+        {% if person.photo and person.photo != "" -%}
+        <img src="{{ person.photo | prepend: '/assets/images/' | relative_url }}" alt="{{ person.name }}" class="welcome-photo" />
+        {%- else -%}
+        <div class="welcome-photo welcome-photo-empty"><img src="{{ '/assets/images/emblem-ib.png' | relative_url }}" alt="" /></div>
+        {%- endif %}
+        <p class="welcome-name">{{ person.name }}</p>
+        <p class="welcome-position">{{ person.position }}</p>
+      </div>
+      <div class="welcome-message">
+        {{ person.message | markdownify }}
+      </div>
+    </article>
+    {%- endfor %}
+  </div>
+</section>

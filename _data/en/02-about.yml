@@ -1,0 +1,31 @@
+# ====================================================================
+#  ABOUT  ·  ENGLISH text
+# ====================================================================
+#  What is this?  The "About the conference" section: heading, the two paragraphs and the three numbers.
+#
+#  How to edit:
+#   • text: is the paragraph text. Leave an empty line between paragraphs.
+#   • Keep the 2 spaces at the start of each line of text.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/02-about.yml
+# ====================================================================
+
+small_title: About the conference
+heading: Bringing the world's biologists to Mongolia
+text: |
+  The International Biological Conference in Mongolia (IBCM) brings together scientists,
+  researchers, students and practitioners from Mongolia and around the world to share new
+  findings, build interdisciplinary collaborations and explore solutions to current and
+  emerging challenges in the biological sciences.
+
+  Following the successful IBCM25, held in Ulaanbaatar on 18–19 September 2025 to mark the
+  60th anniversary of the Institute of Biology, IBCM27 continues the series with plenary
+  lectures, keynote talks, invited talks, and oral and poster sessions.
+stats:
+- number: 60+
+  label: years of the Institute of Biology
+- number: 2nd
+  label: edition of IBCM
+- number: '5'
+  label: scientific sessions

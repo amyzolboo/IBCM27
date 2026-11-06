@@ -1,0 +1,28 @@
+# ====================================================================
+#  COMMITTEES  ·  ENGLISH text
+# ====================================================================
+#  What is this?  The committee lists.
+#
+#  How to edit:
+#   • Add one member per line, starting with  - 
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/09-committees.yml
+# ====================================================================
+
+small_title: People
+heading: Committees
+list:
+- name: Organizing Committee
+  members:
+  - Name — Chair
+  - Name
+  - Name
+- name: International Scientific Committee
+  members:
+  - Name, Institution, Country
+  - Name, Institution, Country
+- name: Technical Committee
+  members:
+  - Name
+  - Name

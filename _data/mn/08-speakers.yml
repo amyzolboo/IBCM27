@@ -1,0 +1,26 @@
+# ====================================================================
+#  SPEAKERS  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The plenary and keynote speaker cards.
+#
+#  How to edit:
+#   • Copy one block (the 3 lines starting with  - name:) for each speaker.
+#   • Photo: upload it to assets/images/speakers/ and write only the file name, e.g.  photo: smith.jpg
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/08-speakers.yml
+# ====================================================================
+
+small_title: Хөтөлбөр
+heading: Пленар болон үндсэн илтгэгчид
+intro: Илтгэгчдийг удахгүй зарлана.
+list:
+- name: Удахгүй зарлагдана
+  affiliation: Байгууллага, Улс
+  photo: ''
+- name: Удахгүй зарлагдана
+  affiliation: Байгууллага, Улс
+  photo: ''
+- name: Удахгүй зарлагдана
+  affiliation: Байгууллага, Улс
+  photo: ''

@@ -1,0 +1,26 @@
+# ====================================================================
+#  REGISTRATION & FEES  ·  ENGLISH text
+# ====================================================================
+#  What is this?  The dark Registration section and the fees table.
+#
+#  How to edit:
+#   • The registration form link itself is set in _config.yml (registration_form:)
+#   • fees: the first row is the column titles; each next row is one category.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The Mongolian version of this file: _data/mn/10-registration-and-fees.yml
+# ====================================================================
+
+small_title: Participate
+heading: Registration & abstract submission
+text: |
+  Registration and abstract submission will open soon. Abstracts should be written in English.
+  Accepted papers may be considered for publication in the conference proceedings.
+button: Registration form
+button_soon: Registration form (coming soon)
+fees_heading: Registration fees
+fees:
+- [Category, Early bird, Regular]
+- [International participants, TBA, TBA]
+- [Mongolian participants, TBA, TBA]
+- [Students, TBA, TBA]

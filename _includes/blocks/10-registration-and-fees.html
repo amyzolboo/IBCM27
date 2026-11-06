@@ -1,0 +1,37 @@
+{%- comment -%}
+  ==================================================================
+  HOME PAGE SECTION: REGISTRATION & FEES
+  ==================================================================
+  You do NOT need to edit this file. It only sets the layout.
+  To change the TEXT, edit:  _data/en/10-registration-and-fees.yml  and  _data/mn/10-registration-and-fees.yml
+  To hide or move this section, see _layouts/home.html
+{%- endcomment -%}
+{%- assign text = site.data[lang]["10-registration-and-fees"] -%}
+{%- assign form = site.conference.registration_form -%}
+<section id="register" class="section section-dark">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow">{{ text.small_title }}</p>
+      <h2>{{ text.heading }}</h2>
+      {{ text.text | markdownify }}
+      {% if form and form != "" %}
+      <a href="{{ form }}" class="btn" target="_blank" rel="noopener">{{ text.button }}</a>
+      {% else %}
+      <span class="btn btn-disabled">{{ text.button_soon }}</span>
+      {% endif %}
+    </div>
+    <div class="fees">
+      <h3>{{ text.fees_heading }}</h3>
+      <table>
+        {%- for row in text.fees %}
+        {%- assign header_row = forloop.first %}
+        <tr>
+          {%- for cell in row -%}
+          {%- if header_row -%}<th>{{ cell }}</th>{%- else -%}<td>{{ cell }}</td>{%- endif -%}
+          {%- endfor -%}
+        </tr>
+        {%- endfor %}
+      </table>
+    </div>
+  </div>
+</section>

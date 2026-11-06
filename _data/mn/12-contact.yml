@@ -1,0 +1,15 @@
+# ====================================================================
+#  CONTACT  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  Institute name and address in the Contact section.
+#
+#  How to edit:
+#   • The email and phone number are in _config.yml
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/12-contact.yml
+# ====================================================================
+
+heading: Холбоо барих
+institution: ШУА-ийн Биологийн хүрээлэн
+address: Улаанбаатар, Монгол Улс

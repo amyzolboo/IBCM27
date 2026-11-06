@@ -1,0 +1,25 @@
+{%- comment -%}
+  ==================================================================
+  HOME PAGE SECTION: ABOUT
+  ==================================================================
+  You do NOT need to edit this file. It only sets the layout.
+  To change the TEXT, edit:  _data/en/02-about.yml  and  _data/mn/02-about.yml
+  To hide or move this section, see _layouts/home.html
+{%- endcomment -%}
+{%- assign text = site.data[lang]["02-about"] -%}
+<section id="about" class="section">
+  <div class="container two-col">
+    <div>
+      <p class="eyebrow dark">{{ text.small_title }}</p>
+      <h2>{{ text.heading }}</h2>
+    </div>
+    <div>
+      {{ text.text | markdownify }}
+      <div class="stats">
+        {%- for s in text.stats %}
+        <div><strong>{{ s.number }}</strong><span>{{ s.label }}</span></div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>

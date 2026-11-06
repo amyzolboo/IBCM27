@@ -1,0 +1,32 @@
+# ====================================================================
+#  SESSIONS  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The five session cards.
+#
+#  How to edit:
+#   • When the session names are decided, change each  title:
+#   • description: is optional — a short line shown under the title. Leave "" for none.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/05-sessions.yml
+# ====================================================================
+
+small_title: Шинжлэх ухааны хөтөлбөр
+heading: Салбар хуралдаанууд
+intro: IBCM27 хурал 5 салбар хуралдаантай. Салбар хуралдааны нэрсийг удахгүй зарлана.
+list:
+- label: 1-р салбар хуралдаан
+  title: Нэр удахгүй зарлагдана
+  description: ''
+- label: 2-р салбар хуралдаан
+  title: Нэр удахгүй зарлагдана
+  description: ''
+- label: 3-р салбар хуралдаан
+  title: Нэр удахгүй зарлагдана
+  description: ''
+- label: 4-р салбар хуралдаан
+  title: Нэр удахгүй зарлагдана
+  description: ''
+- label: 5-р салбар хуралдаан
+  title: Нэр удахгүй зарлагдана
+  description: ''

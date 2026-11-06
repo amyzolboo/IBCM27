@@ -1,0 +1,35 @@
+# ====================================================================
+#  WELCOME MESSAGE  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The greeting from the Director / Conference Chair,
+#                 with photo, name and position.
+#
+#  How to edit:
+#   • The message below is only a DRAFT — replace it with the real text
+#     approved by the person who signs it. Leave an empty line between paragraphs.
+#   • Photo: upload it to assets/images/ and write only the file name,
+#     e.g.  photo: director.jpg   (leave "" to show a placeholder)
+#   • More than one greeting (e.g. Director AND Chair)? Copy the whole block
+#     starting with  - name:  and paste it below. They will appear one after another.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/03-welcome.yml
+# ====================================================================
+
+small_title: Мэндчилгээ
+heading: Зохион байгуулагчдын мэндчилгээ
+list:
+- name: Овог Нэр                                        # EDIT
+  position: ШУА-ийн Биологийн хүрээлэнгийн захирал        # EDIT
+  photo: ""
+  message: |
+    Эрхэм хүндэт эрдэмтэн, судлаачид аа,
+
+    ШУА-ийн Биологийн хүрээлэнгийн нэрийн өмнөөс Улаанбаатар хотноо болох Олон улсын биологийн
+    эрдэм шинжилгээний хурал 2027-д та бүхнийг урьж байгаадаа таатай байна.
+
+    Монгол болон дэлхийн өнцөг булан бүрээс ирэх судлаачдыг хүлээн авч, шинэ нээлт, судалгааны
+    үр дүнгээ хуваалцан, биологийн шинжлэх ухааны салбарт урт хугацааны хамтын ажиллагааг
+    бэхжүүлэхийг тэсэн ядан хүлээж байна.
+
+    Улаанбаатар хотноо уулзъя.

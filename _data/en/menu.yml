@@ -1,0 +1,34 @@
+# ====================================================================
+#  TOP MENU  ·  ENGLISH text
+# ====================================================================
+#  What is this?  The links in the dark bar at the top of every page.
+#
+#  How to edit:
+#   • title: is the text shown.  url: is where it goes.
+#   • "/#about" means "the About section of the English home page".
+#   • Add  button: true  to show an item as the yellow button.
+#   • To add a page to the menu, copy two lines (- title: / url:) and change them.
+#  The Mongolian menu: _data/mn/menu.yml
+# ====================================================================
+
+- title: About
+  url: /#about
+- title: GB34
+  url: /#gb34
+- title: Sessions
+  url: /#sessions
+- title: Dates
+  url: /#dates
+- title: Speakers
+  url: /#speakers
+- title: Committees
+  url: /#committees
+- title: News
+  url: /news/
+- title: Guidelines
+  url: /guidelines/
+- title: Contact
+  url: /#contact
+- title: Register
+  url: /#register
+  button: true

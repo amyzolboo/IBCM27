@@ -1,0 +1,33 @@
+# ====================================================================
+#  IBCM27 & GB34  ·  MONGOLIAN / МОНГОЛ text
+# ====================================================================
+#  What is this?  The section explaining that IBCM27 is held together
+#                 with GB34 (the 34th GBIF Governing Board meeting).
+#
+#  How to edit:
+#   • Check the text with the GBIF Mongolia node / GBIF Secretariat before publishing.
+#   • cards: the three boxes on the right. Copy a block (- title: / text:) to add one.
+#   • link: paste the official GB34 page on GBIF.org when it exists — a button appears.
+#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
+#   • If your text contains a colon ( : ), put it in "quotes".
+#  The English version of this file: _data/en/04-gb34.yml
+# ====================================================================
+
+small_title: Хамтран зохион байгуулах
+heading: IBCM27 ба GB34
+text: |
+  IBCM27 хурал нь дэлхийн бүх амьд организмын тухай мэдээллийг нээлттэй түгээдэг олон улсын сүлжээ болох
+  [Биологийн олон янз байдлын мэдээллийн дэлхийн байгууллага (GBIF)](https://www.gbif.org)-ын
+  Удирдах зөвлөлийн 34 дэх хурал буюу **GB34**-тэй хамт зохион байгуулагдана.
+
+  Хоёр арга хэмжээг нэг долоо хоногт зохион байгуулснаар дэлхийн өнцөг булан бүрээс биологичид
+  болон биологийн олон янз байдлын мэдээллийн мэргэжилтнүүд Улаанбаатарт цугларна.
+link: ""
+button: GBIF.org дахь GB34-ийн албан ёсны хуудас
+cards:
+- title: GB34 — GBIF-ийн Удирдах зөвлөл
+  text: GBIF-ийн гишүүн орнуудын төлөөлөгчид, хорооны гишүүд болон GBIF-ийн Нарийн бичгийн дарга нарын газарт зориулагдсан. Бүртгэл GBIF-ээр дамжина.
+- title: IBCM27 — Эрдэм шинжилгээний хурал
+  text: Бүх судлаач, оюутан, мэргэжилтнүүдэд нээлттэй. Бүртгэл энэ вэбсайтаар.
+- title: Хамтарсан арга хэмжээ
+  text: Симпозиум, сургалт зэрэг хамтарсан арга хэмжээ — удахгүй зарлагдана.   # EDIT
