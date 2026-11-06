@@ -295,12 +295,78 @@ a { color: var(--sky); }
   .welcome-message::before { display: none; }
 }
 
-/* ===== Social media links in the Contact section ===== */
-.social { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin-top: 1.5rem; }
-.social a {
-  padding: .45rem 1.1rem; border: 1.5px solid var(--sky); border-radius: 999px;
-  text-decoration: none; font-size: .9rem; font-weight: 500; color: var(--sky);
+
+
+/* ===== Typography refresh: clearer, larger, more contemporary ===== */
+html { font-size: 17px; }
+body {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
-.social a:hover { background: var(--sky); color: #fff; }
+h1, h2, h3, .brand-text, .countdown strong, .stats strong,
+.session-no, .welcome-name, .avatar, .speaker img {
+  font-family: "Manrope", Arial, sans-serif;
 }
-.social a:hover { background: rgba(255,255,255,.1); color: #fff; }
+h2 { font-size: clamp(2rem, 3.8vw, 2.8rem); }
+h3 { font-size: 1.22rem; }
+p { font-size: 1rem; }
+.nav-links a { font-size: 1rem; }
+.lang-switch a { font-family: "Inter", sans-serif; font-size: .88rem; }
+.eyebrow, .session-label, .countdown span, .hero-credit,
+.news-item time, .fees th { font-size: .88rem; }
+.session-desc, .news-item p, .speaker p, .welcome-position,
+.gb34-card p, .stats span { font-size: 1rem; }
+.prose { font-size: 1.06rem; line-height: 1.8; }
+.prose h2 { font-size: 1.85rem; }
+.prose h3 { font-size: 1.35rem; }
+.footer { font-size: .95rem; }
+
+/* ===== Contact section social links ===== */
+.contact-institution { color: var(--muted); font-size: 1.08rem; }
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+}
+.contact-details a { text-decoration: none; font-weight: 600; }
+.contact-details a:hover { text-decoration: underline; }
+.contact-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .8rem;
+  margin-top: 1.8rem;
+}
+.contact-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .65rem 1.2rem;
+  border: 1px solid rgba(18,53,91,.24);
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  color: var(--sky);
+  font-size: .98rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+.contact-social a:hover {
+  background: var(--sky);
+  color: #fff;
+  transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .contact-social { gap: .6rem; }
+  .contact-social a { padding: .6rem 1rem; }
+  .contact-details { flex-direction: column; gap: .25rem; }
+  .contact-details span { display: none; }
+}
