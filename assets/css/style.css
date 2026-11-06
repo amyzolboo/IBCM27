@@ -528,3 +528,8 @@ p { font-size: 1rem; }
   .session-page-content { padding: 1.25rem; }
   .session-page-bottom { align-items: flex-start; flex-direction: column; }
 }
+
+
+/* Keep in-page destinations clear of the sticky navigation */
+#sessions, #top { scroll-margin-top: 6.5rem; }
+html { scroll-behavior: smooth; }
