@@ -19,9 +19,9 @@
 small_title: Welcome message
 heading: Greetings from the organizers
 list:
-- name: Name Surname                                   # EDIT
+- name: Gantulga Davaakhuu, Ph.D                                   # EDIT
   position: Director, Institute of Biology, Mongolian Academy of Sciences   # EDIT
-  photo: ""
+  photo: "assets/images/GD.png"
   message: |
     Dear colleagues and friends,
 
