@@ -1,10 +1,7 @@
 {%- comment -%}
-  ==================================================================
   HOME PAGE SECTION: SESSIONS
-  ==================================================================
-  You do NOT need to edit this file. It only sets the layout.
-  To change the TEXT, edit:  _data/en/05-sessions.yml  and  _data/mn/05-sessions.yml
-  To hide or move this section, see _layouts/home.html
+  Session titles and descriptions are managed in _data/en/05-sessions.yml
+  and _data/mn/05-sessions.yml.
 {%- endcomment -%}
 {%- assign text = site.data[lang]["05-sessions"] -%}
 <section id="sessions" class="section section-tint">
@@ -14,12 +11,13 @@
     <p class="lead">{{ text.intro }}</p>
     <div class="sessions">
       {%- for s in text.list %}
-      <article class="session">
+      <a class="session session-link" href="{{ site.baseurl }}{% if lang == 'mn' %}/mn{% endif %}/sessions/session-{{ forloop.index }}/" aria-label="{{ s.label }}: {{ s.title }} — view agenda">
         <span class="session-no">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
         <p class="session-label">{{ s.label }}</p>
         <h3>{{ s.title }}</h3>
         {% if s.description and s.description != "" %}<p class="session-desc">{{ s.description }}</p>{% endif %}
-      </article>
+        <span class="session-cta">{% if lang == 'mn' %}Хөтөлбөр үзэх <span aria-hidden="true">→</span>{% else %}View agenda <span aria-hidden="true">→</span>{% endif %}</span>
+      </a>
       {%- endfor %}
     </div>
   </div>
