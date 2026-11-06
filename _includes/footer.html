@@ -2,22 +2,13 @@
   ==================================================================
   BOTTOM BAR
   ==================================================================
-  You do NOT need to edit this file.
   Text: _data/en/13-footer.yml and _data/mn/13-footer.yml
-  Social media links: _config.yml (social:)
 {%- endcomment -%}
 {%- assign lang = page.lang | default: site.default_lang -%}
 {%- assign text = site.data[lang]["13-footer"] -%}
 <footer class="footer">
   <div class="container">
     <p>{{ text.copyright }}</p>
-    {% if site.social %}
-    <div class="social">
-      {%- for s in site.social %}
-      <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.name }}</a>
-      {%- endfor %}
-    </div>
-    {% endif %}
     <p><a href="#top">{{ text.back_to_top }}</a></p>
   </div>
 </footer>
