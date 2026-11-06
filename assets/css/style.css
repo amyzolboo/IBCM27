@@ -294,3 +294,12 @@ a { color: var(--sky); }
   .welcome { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.6rem; }
   .welcome-message::before { display: none; }
 }
+
+/* ===== Social media links in the bottom bar ===== */
+.footer .container { align-items: center; }
+.social { display: flex; flex-wrap: wrap; gap: .5rem; }
+.social a {
+  padding: .3rem .85rem; border: 1px solid rgba(255,255,255,.25); border-radius: 999px;
+  text-decoration: none; font-size: .85rem; color: #dce4ee;
+}
+.social a:hover { background: rgba(255,255,255,.1); color: #fff; }
