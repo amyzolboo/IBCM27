@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-{%- assign sessions_home = '/' -%}
+{%- assign home_url = '/' -%}
 {%- if page.lang == 'mn' -%}
-  {%- assign sessions_home = '/mn/' -%}
+  {%- assign home_url = '/mn/' -%}
 {%- endif -%}
 <section class="page-header session-page-header">
   <div class="container">
@@ -19,7 +19,7 @@ layout: default
       {{ content }}
     </div>
     <div class="session-page-bottom">
-      <a class="btn btn-outline" href="{{ sessions_home | relative_url }}#sessions">← {% if page.lang == "mn" %}Бүх салбар хуралдаан{% else %}All conference sessions{% endif %}</a>
+      <a class="btn btn-outline" href="{{ home_url | relative_url }}">← {% if page.lang == "mn" %}Нүүр хуудас руу буцах{% else %}Back to homepage{% endif %}</a>
       <span>{% if page.lang == "mn" %}Дэлгэрэнгүй хөтөлбөр удахгүй нийтлэгдэнэ{% else %}Detailed programme to be announced{% endif %}</span>
     </div>
   </div>
