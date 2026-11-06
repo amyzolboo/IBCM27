@@ -1,15 +1,25 @@
-# ====================================================================
-#  CONTACT  ·  ENGLISH text
-# ====================================================================
-#  What is this?  Institute name and address in the Contact section.
-#
-#  How to edit:
-#   • The email and phone number are in _config.yml
-#   • Change only the text AFTER the colon ( : ). Keep the spaces at the start of lines.
-#   • If your text contains a colon ( : ), put it in "quotes".
-#  The Mongolian version of this file: _data/mn/12-contact.yml
-# ====================================================================
-
-heading: Contact
-institution: Institute of Biology, Mongolian Academy of Sciences
-address: Ulaanbaatar, Mongolia
+{%- comment -%}
+  ==================================================================
+  HOME PAGE SECTION: CONTACT
+  ==================================================================
+  You do NOT need to edit this file. It only sets the layout.
+  To change the TEXT, edit:  _data/en/12-contact.yml  and  _data/mn/12-contact.yml
+  Email, phone and social media links: _config.yml
+  To hide or move this section, see _layouts/home.html
+{%- endcomment -%}
+{%- assign text = site.data[lang]["12-contact"] -%}
+<section id="contact" class="section section-tint">
+  <div class="container contact">
+    <img src="{{ '/assets/images/emblem-ib.png' | relative_url }}" alt="" class="contact-emblem" />
+    <h2>{{ text.heading }}</h2>
+    <p>{{ text.institution }}<br />{{ text.address }}</p>
+    <p><a href="mailto:{{ site.conference.email }}">{{ site.conference.email }}</a> · {{ site.conference.phone }}</p>
+    {% if site.social %}
+    <div class="social">
+      {%- for s in site.social %}
+      <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.name }}</a>
+      {%- endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
