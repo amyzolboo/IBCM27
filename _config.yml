@@ -31,8 +31,9 @@ conference:
   # When filled in, a countdown appears on the home page. Leave "" to hide it.
   start: ""
 
-  email: info@example.com
-  phone: "+976 0000 0000"
+  email: biology@mas.ac.mn
+  website: biology.ac.mn
+  phone: "+976 11 451781"
 
   # Paste the registration form link (e.g. Google Form). Leave "" while it's not ready.
   registration_form: ""
@@ -80,3 +81,17 @@ exclude:            # help files that are only for GitHub, not the website
   - assets/images/speakers/README.md
   - Gemfile
   - Gemfile.lock
+
+# ---------------------------------------------------------------------
+#  EDIT — SOCIAL MEDIA (shown in the bottom bar of every page)
+#  To hide one, delete its two lines. To add one, copy two lines.
+# ---------------------------------------------------------------------
+social:
+  - name: Facebook
+    url: https://www.facebook.com/Officialpage.IB.MAS
+  - name: X (Twitter)
+    url: https://x.com/Biology_MAS
+  - name: LinkedIn
+    url: https://www.linkedin.com/company/institute-of-biology-mas
+  - name: biology.ac.mn
+    url: https://biology.ac.mn/
