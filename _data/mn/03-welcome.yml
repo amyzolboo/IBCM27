@@ -19,9 +19,9 @@
 small_title: Мэндчилгээ
 heading: Зохион байгуулагчдын мэндчилгээ
 list:
-- name: Овог Нэр                                        # EDIT
+- name: Гантулга Даваахүү, Ph.D                                       # EDIT
   position: ШУА-ийн Биологийн хүрээлэнгийн захирал        # EDIT
-  photo: ""
+  photo: "assets/images/GD.png"
   message: |
     Эрхэм хүндэт эрдэмтэн, судлаачид аа,
 
