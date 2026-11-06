@@ -370,3 +370,87 @@ p { font-size: 1rem; }
   .contact-details { flex-direction: column; gap: .25rem; }
   .contact-details span { display: none; }
 }
+
+
+/* ===== Layout refinement: wider canvas and calmer navigation ===== */
+.container {
+  width: min(1360px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+/* Give the header its own generous spacing so the brand and menu
+   read as separate, balanced groups. */
+.nav-inner {
+  min-height: 78px;
+  height: auto;
+  gap: 2.5rem;
+}
+.brand {
+  flex: 0 0 auto;
+  gap: .9rem;
+  min-width: max-content;
+}
+.brand-mark {
+  height: 48px;
+  display: block;
+}
+.brand-text {
+  font-size: 1.42rem;
+  letter-spacing: -.035em;
+  white-space: nowrap;
+}
+.nav-right {
+  margin-left: auto;
+  gap: 2rem;
+  min-width: 0;
+}
+.nav-links {
+  gap: clamp(1.35rem, 2.1vw, 2.1rem);
+}
+.nav-links a {
+  font-size: .98rem;
+  font-weight: 500;
+  letter-spacing: .005em;
+  padding-block: .6rem;
+}
+.lang-switch {
+  flex: 0 0 auto;
+}
+
+/* Use a little more of the screen on large displays without making
+   reading columns excessively wide. */
+@media (min-width: 1500px) {
+  .container { width: min(1440px, calc(100% - 96px)); }
+}
+@media (max-width: 1100px) {
+  .nav-inner {
+    min-height: 72px;
+    gap: 1rem;
+  }
+  .nav-right { gap: 1rem; }
+  .nav-links {
+    top: 72px;
+    padding: .75rem 0 1rem;
+    gap: 0;
+  }
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: .85rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .container { width: calc(100% - 36px); }
+  .nav-inner { min-height: 66px; }
+  .brand { gap: .65rem; }
+  .brand-mark { height: 40px; }
+  .brand-text { font-size: 1.2rem; }
+  .nav-right { gap: .75rem; }
+  .nav-links { top: 66px; }
+}
+@media (max-width: 360px) {
+  .container { width: calc(100% - 28px); }
+  .brand-mark { height: 35px; }
+  .brand-text { font-size: 1.08rem; }
+  .lang-switch a { padding: .3rem .5rem; }
+}
