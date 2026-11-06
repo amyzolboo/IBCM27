@@ -21,7 +21,7 @@ heading: Greetings from the organizers
 list:
 - name: Gantulga Davaakhuu, Ph.D                                   # EDIT
   position: Director, Institute of Biology, Mongolian Academy of Sciences   # EDIT
-  photo: "assets/images/GD.png"
+  photo: GD.png
   message: |
     Dear colleagues and friends,
 
