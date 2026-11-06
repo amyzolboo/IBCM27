@@ -2,16 +2,25 @@
   ==================================================================
   HOME PAGE SECTION: CONTACT
   ==================================================================
-  You do NOT need to edit this file. It only sets the layout.
-  To change the TEXT, edit:  _data/en/12-contact.yml  and  _data/mn/12-contact.yml
-  To hide or move this section, see _layouts/home.html
+  Social media links are managed in _config.yml (social:).
 {%- endcomment -%}
 {%- assign text = site.data[lang]["12-contact"] -%}
 <section id="contact" class="section section-tint">
   <div class="container contact">
     <img src="{{ '/assets/images/emblem-ib.png' | relative_url }}" alt="" class="contact-emblem" />
     <h2>{{ text.heading }}</h2>
-    <p>{{ text.institution }}<br />{{ text.address }}</p>
-    <p><a href="mailto:{{ site.conference.email }}">{{ site.conference.email }}</a> · {{ site.conference.phone }}</p>
+    <p class="contact-institution">{{ text.institution }}<br />{{ text.address }}</p>
+    <p class="contact-details">
+      <a href="mailto:{{ site.conference.email }}">{{ site.conference.email }}</a>
+      <span aria-hidden="true">·</span>
+      <a href="tel:{{ site.conference.phone | replace: ' ', '' }}">{{ site.conference.phone }}</a>
+    </p>
+    {% if site.social %}
+    <nav class="contact-social" aria-label="Social media and website links">
+      {% for s in site.social %}
+      <a href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.name }} <span aria-hidden="true">↗</span></a>
+      {% endfor %}
+    </nav>
+    {% endif %}
   </div>
 </section>
